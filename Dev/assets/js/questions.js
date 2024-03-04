@@ -1,4 +1,4 @@
-// All of the questions, choices, and answer key
+// All of the choices, and answer key
 //Quiz questions referenced from my independent study on W3 Schools 
 const questions = [
     {
