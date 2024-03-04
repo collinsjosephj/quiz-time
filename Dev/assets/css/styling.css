@@ -1,18 +1,44 @@
+:root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+}
+
+.madimi-one-regular {
+    font-family: "Madimi One", sans-serif;
+    font-style: normal;
+}
+
 body {
-    font-family: "Madima One" sans-serif;
+    display: flex;
+    font-family: "Madimi One", sans-serif;
+    height: 100vh;
     font-size: 120%;
     line-height: 1.5;
     margin: 0;
     padding: 0;
-    background-color: #1d1f21;
-    color: #e1e4e8;
+    --hue: var(--hue-neutral);
+    justify-content: center;
+    align-items: center;
+    /*background-color: hsl(var(--hue), 100%, 20%); */
+    background-color: gray;
+}
+
+.body-correct {
+    --hue: var(--hue-correct);
+}
+
+.body-wrong {
+    --hue: var(--hue-wrong);
 }
 
 a {
-    color: #563d7c;
+    color: white;
     text-decoration: none;
     transition: color 0.2s;
     justify-content: center;
+    font-size: 2em;
+    border-radius: 100px;
 }
 
 a:hover {
@@ -72,10 +98,11 @@ li:nth-child(odd) {
     background-color: #1d1f21;
 }
 
-.wrapper {
+.quiz-container {
+    display: flex;
     margin: 10rem auto 0 auto;
-    max-width: 60rem;
-    background-color: #1d1f21;
+    max-width: 60%;
+    background-color: white;
     border-radius: 0.25rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 2rem;
@@ -112,7 +139,27 @@ li:nth-child(odd) {
     position: absolute;
     top: 1rem;
     right: 1rem;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: bold;
-    color: #563d7c;
+    color: white;
+    background-color: #8570a5;
+    background-size: contain;
+    border-radius: 60px;
+    font-size: 2em;
+    padding: 50;
+    margin: 0;
+}
+
+@media (max-width: 690px) {
+    .btn {
+        font-size: 1rem;
+        margin: 16px 0px 0px 0px;
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .btn {
+        font-size: 0.8rem;
+    }
 }

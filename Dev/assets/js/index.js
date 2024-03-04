@@ -1,20 +1,42 @@
-/*
-1- I need a timer, it needs to start when you hit the button.
-1a- The timer needs to start at 60s and end at 0s.
-1b- The timer should go down by 1
-*/
+// Variables
+const currentQuestionIndex = 0;
+const time = questions.length * 15;
+var timerId;
 
-let time = 60;
-var timerStart =document.querySelector("#timer")
+const questionsEl = document.getElementById('questions');
+const timerEl = document.getElementById('count');
+const choicesEl = document.getElementById('choices');
+const startBtn = document.getElementById('start');
+//const submitBtn = document.getElementById('submit');
+//const initialsEl = document.getElementById('initials');
+//const feedbackEl = document.getElementById('feedback');
 
-function timer() {
-    const interval = setInterval(function(){
-        document.getElementById("timer").innerHTML = time;
-        time--;
-        if (time < 0 ) {
-            clearInterval(interval);
-        }
-        }, 1000)
-}
+// Add event listener to call startGame() when the start button is pressed
+//startBtn.addEventListener('click', startGame);
+// QUESTIONS
 
-timerStart.addEventListener("click", timer)
+// Function to initiate beginning of quiz
+const startGame = () => {
+    let startScreenEl = document.getElementById('start-screen');
+    questionsEl.classList.remove('hide');
+    timerEl.textContent = time;
+    startTimer();
+};
+    startBtn.addEventListener('click', startGame);
+
+// The timer function that starts on startGame
+function startTimer() {
+    this.intervalId = setInterval(countdown, 1000);
+};
+
+function countdown() {
+    const htmlToChange = document.getElementById("countdown")
+    let parsedCount= parseInt(htmlToChange.textContent)
+    parsedCount--
+    if(parsedCount<0){
+        clearInterval(this.intervalId)
+    }else{
+        htmlToChange.textContent = parsedCount
+    }
+};
+startTimer();
