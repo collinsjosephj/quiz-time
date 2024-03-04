@@ -1,0 +1,118 @@
+body {
+    font-family: "Madima One" sans-serif;
+    font-size: 120%;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background-color: #1d1f21;
+    color: #e1e4e8;
+}
+
+a {
+    color: #563d7c;
+    text-decoration: none;
+    transition: color 0.2s;
+    justify-content: center;
+}
+
+a:hover {
+    color: #8570a5;
+}
+
+button {
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.25rem;
+    background-color: #563d7c;
+    color: white;
+    border: 0;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #8570a5;
+}
+
+.choices button {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+input[type="text"] {
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ccc;
+    width: 100%;
+    background-color: #24292e;
+    color: #e1e4e8;
+}
+
+ol {
+    padding-left: 0px;
+    max-height: 400px;
+    overflow: auto;
+    list-style: decimal inside none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    padding: 1rem;
+    border-bottom: 1px solid #373b41;
+    background-color: #24292e;
+}
+
+li:nth-child(odd) {
+    background-color: #1d1f21;
+}
+
+.wrapper {
+    margin: 10rem auto 0 auto;
+    max-width: 60rem;
+    background-color: #1d1f21;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+.hide {
+    display: none;
+}
+
+.start {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.scores {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #563d7c;
+}
+
+.feedback {
+    font-style: italic;
+    font-size: 1.25rem;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    color: gray;
+    border-top: 2px solid #ccc;
+}
+
+.timer {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #563d7c;
+}

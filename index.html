@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Coding Quiz</title>
-
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Time to Test Your Knowledge!</title>
+  <link rel="stylesheet" href="dev/assets/css/styling.css">
+  <link href="https://fonts.googleapis.com/css?family=Madimi+One:regular" rel="stylesheet" />
+</head>
 
   <body>
     <div class="scores"><a href="highscores.html">View Highscores</a></div>
-
     <div class="timer">Time: <span id="time">0</span></div>
-
-    <div class="wrapper">
+    <!-- The <div> below will encase the basis of this quiz and all ids, classes, and btns to make it run-->
+    <div class="quiz-container">
       <div id="start-screen" class="start">
-        <h1>Coding Quiz Challenge</h1>
+        <h1>JS Quiz Challenge</h1>
         <p>
-          Try to answer the following code-related questions within the time
-          limit. Keep in mind that incorrect answers will penalize your
-          score/time by 15 seconds!
+          Congratulations on learning the basics of Javascript, a common language utilized across the coding world. To test
+          your knowledge we have compiled a short list of questions, try and answer them all within the time limit!
         </p>
-        <button id="start">Start Quiz</button>
+        <button id="start">Start!</button>
       </div>
-
-      <div id="questions" class="hide">
-        <h2 id="question-title"></h2>
+      <!--To be able to put more time into building the login, I utilized the solved version of the index.html lines 25-40-->
+      <div id="questions" class="hide"> 
+        <h2 id=questions-title>Test</h2>
         <div id="choices" class="choices"></div>
       </div>
 
@@ -41,8 +39,8 @@
 
       <div id="feedback" class="feedback hide"></div>
     </div>
-
+    
     <script src="./assets/js/questions.js"></script>
-    <script src="./assets/js/logic.js"></script>
+    <script src="./assets/js/index.js"></script>
   </body>
 </html>
