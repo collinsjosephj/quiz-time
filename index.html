@@ -12,7 +12,7 @@
 </head>
 
   <body>
-    <div class="navbar"></div>
+    <div></div>
     <div class="scores"><a href="highscores.html">Highscores</a></div>
     <div class="timer">Time Left: <span id="count">0</span></div>
 
@@ -27,24 +27,24 @@
         <button id="start">Start!</button>
       </div>
       <!--To be able to put more time into building the logic, I utilized the solved version of the index.html lines 25-40-->
-      <div id="questions" class="hide"> 
-        <h2 id=questions-title></h2>
+      <div id="questions-title"> 
+        <h2 id="questions" class="hide"></h2>
         <div id="choices" class="choices"></div>
       </div>
 
       <div id="end-screen" class="hide">
         <h2>All done!</h2>
-        <p>Your final score is <span id="final-score"></span>.</p>
+        <p id ="final-score"></p>
         <p>
           Enter initials: <input type="text" id="initials" max="3" />
           <button id="submit">Submit</button>
         </p>
       </div>
-
       <div id="feedback" class="feedback hide"></div>
     </div>
 
-    <script src="dev/assets/js/questions.js"></script>
-    <script src="dev/assets/js/index.js"></script>
+    <!--<script src="dev/assets/js/questions.js"></script>-->
+    <script src="Dev/assets/js/index.js"></script>
+    <script src="Dev/assets/js/scores.js"></script>
   </body>
 </html>

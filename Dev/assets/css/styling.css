@@ -20,16 +20,7 @@ body {
     --hue: var(--hue-neutral);
     justify-content: center;
     align-items: center;
-    /*background-color: hsl(var(--hue), 100%, 20%); */
     background-color: gray;
-}
-
-.body-correct {
-    --hue: var(--hue-correct);
-}
-
-.body-wrong {
-    --hue: var(--hue-wrong);
 }
 
 a {
@@ -64,7 +55,7 @@ button:hover {
 }
 
 .choices button {
-    display: block;
+    display: flex;
     margin: 0 auto;
     margin-bottom: 1rem;
 }
@@ -105,9 +96,13 @@ li:nth-child(odd) {
     background-color: white;
     border-radius: 0.25rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 2rem;
+    padding: 1rem;
 }
-
+.h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .hide {
     display: none;
 }
@@ -131,8 +126,9 @@ li:nth-child(odd) {
     font-size: 1.25rem;
     margin-top: 2rem;
     padding-top: 1rem;
-    color: gray;
+    color: purple;
     border-top: 2px solid #ccc;
+    contain: inherit;
 }
 
 .timer {
